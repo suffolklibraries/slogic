@@ -13,6 +13,7 @@
     font-family: $c-sans-serif;
 }
 
+
 // line-heights
 .c-lh-copy {
     line-height: $c-lh;
@@ -20,6 +21,7 @@
         line-height: $c-lh-ns;
     }
 }
+
 
 // Font sizes
 .c-font-size {
@@ -29,9 +31,25 @@
     }
 }
 
+
 // Page wrapper width
 .c-wrapper {
     max-width: $c-max-width;
+}
+
+
+// Custom colours
+.c-purple {
+    color: $c-purple;
+}
+.c-bg-purple {
+    background-color: $c-purple;
+}
+.c-green {
+    color: $c-green;
+}
+.c-bg-green {
+    background-color: $c-green;
 }
 
 
