@@ -1,6 +1,17 @@
 // Add your custom variables to this file
-// I normally prepend them with a 'c-' to distinguish them from Tachyons selectors
+// Prepend with 'c-' to distinguish them from Tachyons selectors
 
 // Better sans-serif stack putting Segoe before Arial on Windows
 // We'll refer to this variable in _c.scss
 $c-sans-serif: -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+
+// Font sizes
+$c-font-size: 112.5%;
+$c-font-size-ns: 118.75%;
+
+// Custom line-heights
+$c-lh: 1.375;
+$c-lh-ns: 1.5;
+
+// Page wrapper
+$c-max-width: 72em;
