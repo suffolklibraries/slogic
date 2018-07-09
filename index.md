@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Home page
+hero: books.jpg
+alt: "A row of old, leather bound books"
 ---
 
 This is the home page, which uses the `default` layout.

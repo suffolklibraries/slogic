@@ -1,12 +1,18 @@
 
 // Converted Variables
 
+// Default media query values
+
+// $breakpoint-not-small: 'screen and (min-width: 30em)' !default;
+// $breakpoint-medium: 'screen and (min-width: 30em) and (max-width: 60em)' !default;
+// $breakpoint-large: 'screen and (min-width: 60em)' !default;
+
 
 // Custom Media Query Variables
 
-$breakpoint-not-small: 'screen and (min-width: 30em)' !default;
-$breakpoint-medium: 'screen and (min-width: 30em) and (max-width: 60em)' !default;
-$breakpoint-large: 'screen and (min-width: 60em)' !default;
+$breakpoint-not-small: 'screen and (min-width: 40em)' !default;
+$breakpoint-medium: 'screen and (min-width: 40em) and (max-width: 64em)' !default;
+$breakpoint-large: 'screen and (min-width: 64em)' !default;
 
 /*
 

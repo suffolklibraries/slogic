@@ -1,17 +1,49 @@
 {% include header.html %}
 
-<article>
+<div class="c-wrapper center">
 
-    <header>
+    <div class="flex-l flex-wrap-l justify-between-l">
 
-        <h1 class="f3 lh-title">{{ page.title }}</h1>
+        <article class="c-w-col4-l bg-white bt bb ba-l b--moon-gray mb3">
 
-        <p class="gray"><time>{{ page.date | date: "%b %-d,  %Y" }}</time></p>
+            <header>
 
-    </header>
+                {% if page.hero %}
 
-    {{ content}}
+                <img class="db" src="/images/{{ page.hero }}" alt="{{ page.alt }}">
 
-</article>
+                {% endif %}
+
+                <div class="pa2 ph4-ns pt4-ns ph5-l">
+
+                    <h1 class="ma0 f3 f2-ns lh-title">{{ page.title }}</h1>
+
+                    <p class="gray"><time>{{ page.date | date: "%b %-d,  %Y" }}</time></p>
+
+                </div>
+
+            </header>
+
+            <div class="pa2 ph4-ns ph5-l">
+
+                {{ content}}
+
+            </div>
+
+        </article>
+
+        <aside class="c-w-col2-l bg-white bt bb ba-l b--moon-gray mb3">
+
+            <div class="pa2 pa4-ns">
+
+                <p class="f6 ma0">Bacon ipsum dolor amet capicola sirloin turkey, pork belly chicken spare ribs ham hock strip steak sausage alcatra tongue t-bone kielbasa swine pork chop. Frankfurter meatloaf tongue doner short ribs turkey. Ham pastrami hamburger frankfurter. Hamburger turducken biltong, sausage rump frankfurter pork belly. Sirloin chicken pastrami pork chop, flank boudin cupim tri-tip. Pork biltong sirloin kielbasa, tri-tip ham capicola shank.</p>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</div>
 
 {% include footer.html %}
