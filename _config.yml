@@ -1,0 +1,58 @@
+title: "Suffolk Libraries"
+description: "Reserve and renew titles, download eBooks, eAudio and music, and find libraries and events."
+lang: "en"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.suffolklibraries.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Include styles inline or link to css file?
+# This has to be set to css: inline for the theme to inline styles
+# Set it to anything else, or remove it, to link to /css/style.class
+
+css: inline
+
+
+# Build settings
+markdown: kramdown
+
+sass:
+  style: compressed
+
+
+# Defaults
+
+# Enable is_homepost test for posts
+# Enable is_page test for pages
+# Enable is_home test for home page
+# Use {% if page.is_post %} etc.
+
+defaults:
+-
+    scope:
+        path: "/"      # empty string for all files
+    values:
+        is_home: true
+-
+    scope:
+        path: ""
+        type: posts
+    values:
+        is_post: true
+-
+    scope:
+        path: ""
+        type: pages
+    values:
+        is_page: true
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
