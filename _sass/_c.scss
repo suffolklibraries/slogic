@@ -53,6 +53,116 @@
 }
 
 
+// Grid
+.c-w-col1 {
+    width: $col1;
+}
+.c-w-col2 {
+    width: $col2;
+}
+.c-w-col3 {
+    width: $col3;
+}
+.c-w-col4 {
+    width: $col4;
+}
+.c-w-col5 {
+    width: $col5;
+}
+.c-w-col6 {
+    width: $col6;
+}
+.c-w-col1-ns {
+    @media #{$breakpoint-not-small} {
+        width: $col1;
+    }
+}
+.c-w-col1-m {
+    @media #{$breakpoint-medium} {
+        width: $col1;
+    }
+}
+.c-w-col1-l {
+    @media #{$breakpoint-large} {
+        width: $col1;
+    }
+}
+.c-w-col2-ns {
+    @media #{$breakpoint-not-small} {
+        width: $col2;
+    }
+}
+.c-w-col2-m {
+    @media #{$breakpoint-medium} {
+        width: $col2;
+    }
+}
+.c-w-col2-l {
+    @media #{$breakpoint-large} {
+        width: $col2;
+    }
+}
+.c-w-col3-ns {
+    @media #{$breakpoint-not-small} {
+        width: $col3;
+    }
+}
+.c-w-col3-m {
+    @media #{$breakpoint-medium} {
+        width: $col3;
+    }
+}
+.c-w-col3-l {
+    @media #{$breakpoint-large} {
+        width: $col3;
+    }
+}
+.c-w-col4-ns {
+    @media #{$breakpoint-not-small} {
+        width: $col4;
+    }
+}
+.c-w-col4-m {
+    @media #{$breakpoint-medium} {
+        width: $col4;
+    }
+}
+.c-w-col4-l {
+    @media #{$breakpoint-large} {
+        width: $col4;
+    }
+}
+.c-w-col5-ns {
+    @media #{$breakpoint-not-small} {
+        width: $col5;
+    }
+}
+.c-w-col5-m {
+    @media #{$breakpoint-medium} {
+        width: $col5;
+    }
+}
+.c-w-col5-l {
+    @media #{$breakpoint-large} {
+        width: $col5;
+    }
+}
+.c-w-col6-ns {
+    @media #{$breakpoint-not-small} {
+        width: $col6;
+    }
+}
+.c-w-col6-m {
+    @media #{$breakpoint-medium} {
+        width: $col6;
+    }
+}
+.c-w-col6-l {
+    @media #{$breakpoint-large} {
+        width: $col6;
+    }
+}
+
 // Some empty media queries
 // Use these if you want to make responsive custom classes
 
