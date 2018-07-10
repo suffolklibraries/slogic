@@ -1,5 +1,7 @@
 ---
 title: An example post
+hero: books.jpg
+alt: "A row of old, leather bound books"
 ---
 
 This is an example post, using the `post` layout.
