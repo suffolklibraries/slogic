@@ -2,7 +2,7 @@
 
 <div class="c-wrapper center">
 
-    <div class="flex-l flex-wrap-l justify-between-l">
+    <div class="flex-l flex-wrap-l justify-between-l{% if page.reverse-order %} flex-wrap-reverse flex-row-reverse{% endif %}">
 
         <article class="c-w-col4-l bg-white bt bb ba-l b--moon-gray mb3">
 
@@ -14,11 +14,15 @@
 
                 {% endif %}
 
-                <div class="ph2 ph4-ns pt2 pt4-ns">
+                <div class="ph2 ph4-ns pt2 pt4-ns mb3">
 
                     <h1 class="ma0 f3 f2-ns lh-title">{{ page.title }}</h1>
 
-                    <p class="gray mt2"><time>{{ page.date | date: "%b %-d,  %Y" }}</time></p>
+                    {% if page.is_post %}
+
+                    <p class="gray mt2 mb0"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d,  %Y" }}</time></p>
+
+                    {% endif %}
 
                 </div>
 

@@ -27,12 +27,14 @@ defaults:
         path: "/"      # empty string for all files
     values:
         is_home: true
+
 -
     scope:
         path: ""
         type: posts
     values:
         is_post: true
+        layout: sidebar
 -
     scope:
         path: ""
