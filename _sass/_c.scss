@@ -1,5 +1,3 @@
-@media screen, projection {
-
 // Define variables in _variables.scss
 // Then create classes that refer to them here
 // Then use these class names in your HTML
@@ -8,11 +6,12 @@
 // Define $c-sans-serif in _variables.scss
 // Then create a c-sans-serif class in this file
 
+@media screen, projection {
+
 // Sans-serif stack
 .c-sans-serif {
     font-family: $c-sans-serif;
 }
-
 
 // line-heights
 .c-lh-copy {
@@ -22,21 +21,24 @@
     }
 }
 
-
 // Font sizes
 .c-font-size {
     font-size: $c-font-size;
     @media #{$breakpoint-not-small} {
         font-size: $c-font-size-ns;
     }
+    @media #{$breakpoint-medium} {
+        font-size: $c-font-size-m;
+    }
+    @media #{$breakpoint-large} {
+        font-size: $c-font-size-l;
+    }
 }
-
 
 // Page wrapper width
 .c-wrapper {
     max-width: $c-max-width;
 }
-
 
 // Custom colours
 .c-purple {
@@ -51,7 +53,6 @@
 .c-bg-green {
     background-color: $c-green;
 }
-
 
 // Grid
 .c-w-col1 {

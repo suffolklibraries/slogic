@@ -10,6 +10,10 @@ url: "https://www.suffolklibraries.co.uk" # the base hostname & protocol for you
 css: linked
 
 
+# Permalinks
+permalink: /posts/:title/
+
+
 # Build settings
 markdown: kramdown
 sass:
