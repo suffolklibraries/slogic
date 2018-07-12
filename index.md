@@ -7,7 +7,7 @@ alt: "A row of old, leather bound books"
 
 This is the home page, which uses the `default` layout.
 
-[Read a post](/posts/example-post/).
+[All posts ⚡️](/posts/).
 
 Try a grid. 6 items, 2 pictures per row default, 3 at medium and 6 at large:
 
