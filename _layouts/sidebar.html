@@ -16,6 +16,12 @@
 
                 <div class="ph2 ph4-ns pt2 pt4-ns mb3">
 
+                    {% if page.breadcrumb %}
+
+                    {% include breadcrumb.html %}
+
+                    {% endif %}
+
                     <h1 class="ma0 f3 f2-ns lh-title">{{ page.title }}</h1>
 
                     {% if page.is_post %}

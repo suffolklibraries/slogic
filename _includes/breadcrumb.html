@@ -1,0 +1,41 @@
+<div class="ph3 pv2 f7 bg-light-gray ba b--moon-gray">
+
+{% if page.is_post %}
+
+    <p class="ma0"><a href="/">Home</a> &rarr;
+
+    {% assign cats = site.data.categories | where: "category", page.category %}
+
+    {% for cat in cats %}
+
+        {% if cat.trail1 != "" %}
+
+            <a href="/{{ cat.trail1 }}">{{ cat.text1 }}</a>
+
+        {% endif %}
+
+        {% if cat.trail2 != "" %}
+
+             &rarr; <a href="/{{ cat.trail2 }}">{{ cat.text2 }}</a>
+
+        {% endif %}
+
+        {% if cat.trail3 != "" %}
+
+             &rarr; <a href="/{{ cat.trail3 }}">{{ cat.text3 }}</a>
+
+        {% endif %}
+
+        {% if cat.trail4 != "" %}
+
+             &rarr; <a href="/{{ cat.trail4 }}">{{ cat.text4 }}</a>
+
+        {% endif %}
+
+    {% endfor %}
+
+    </p>
+
+{% endif %}
+
+</div>
