@@ -13,3 +13,6 @@ fields:
   label: Layout
   hidden: true
   default: sidebar
+- type: textarea
+  name: excerpt
+  label: Excerpt
