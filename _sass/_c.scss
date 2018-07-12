@@ -163,6 +163,12 @@
         width: $col6;
     }
 }
+.c-mla {
+    margin-left: auto; // For flexbox items
+}
+.c-mra {
+    margin-right: auto; // For flexbox items
+}
 
 // Some empty media queries
 // Use these if you want to make responsive custom classes
