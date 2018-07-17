@@ -14,6 +14,12 @@ layout: sidebar
 
         <p class="ma0 gray f6"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %-d,  %Y" }}</time></p>
 
+        {% if post.featured-image %}
+
+        <a href="{{ post.url }}"><img class="db" src="{{ post.featured-image }}" alt="{{ post.featured-alt }}"></a>
+
+        {% endif %}
+
     </header>
 
     <p class="mt1 mb0">{{ post.excerpt }}</p>
